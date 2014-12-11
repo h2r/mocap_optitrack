@@ -17,5 +17,11 @@ add_subdirectory(src)
 install(DIRECTORY launch config
   DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION})
 
+
+add_executable(pose_stamper_1 src/pose_stamper_1.cpp)
+target_link_libraries(pose_stamper_1 ${catkin_LIBRARIES})
+#add_executable(mocap_node src/mocap_node.cpp)
+#target_link_libraries(mocap_node ${catkin_LIBRARIES})
+
 # Check the validity of the supplied launch files.
 roslaunch_add_file_check(launch)

@@ -1,4 +1,5 @@
 
+
 add_executable(${PROJECT_NAME}_mocap_node
   mocap_node.cpp
   mocap_config.cpp
@@ -15,3 +16,4 @@ install(TARGETS
   LIBRARY DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION}
   RUNTIME DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
 )
+
